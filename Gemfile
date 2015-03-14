@@ -1,9 +1,7 @@
 source 'http://rubygems.org'
 
+ruby 1.9.3
 gem 'rails', '3.2.18'
-
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'rails3-generators'
 group :development, :test do
@@ -30,16 +28,5 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# gem 'omniauth-twitter'
-gem 'omniauth-twitter', :github => 'arunagw/omniauth-twitter'
-gem 'omniauth-facebook'
-gem 'omniauth-google-oauth2'
-gem 'omniauth-github'
-gem 'omniauth-amazon'
-#gem 'omniauth-youtube'
 
 
