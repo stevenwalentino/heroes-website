@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" class="skrollr skrollr-desktop">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +10,117 @@
   .navbar{
     opacity: 0.4;
     filter: alpha(opacity=40);
+    
   }
-  body{
+  welcoming{
     background-image: url("img/HL - HLHomepage.png");
     background-size: 100% 100%;
+  }
+  * {
+      padding:0;
+      margin:0;
+  }
+  
+  html, body {
+      height:100%;
+  }
+  
+  .skrollr-desktop body {
+      height:100% !important;
+  }
+  
+  body {
+      font-family:sans-serif;
+  }
+  
+  p {
+      margin:1em 0;
+  }
+  
+  .parallax-image-wrapper {
+      position:fixed;
+      left:0;
+      width:100%;
+      overflow:hidden;
+  }
+  
+  .parallax-image-wrapper-50 {
+      height:50%;
+      top:-50%;
+  }
+  
+  .parallax-image-wrapper-100 {
+      height:100%;
+      top:-100%;
+  }
+  
+  .parallax-image {
+      display:none;
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:cover;
+  }
+  
+  .parallax-image-50 {
+      height:200%;
+      top:-50%;
+  }
+  
+  .parallax-image-100 {
+      height:100%;
+      top:0;
+  }
+  
+  .parallax-image.skrollable-between {
+      display:block;
+  }
+  
+  .no-skrollr .parallax-image-wrapper {
+      display:none !important;
+  }
+  
+  #skrollr-body {
+      height:100%;
+      overflow:visible;
+      position:relative;
+  }
+  
+  .gap {
+      background:transparent center no-repeat;
+      background-size:cover;
+  }
+  
+  .skrollr .gap {
+      background:transparent !important;
+  }
+  
+  .gap-50 {
+      height:50%;
+  }
+  
+  .gap-100 {
+      height:100%;
+  }
+  
+  .header, .content {
+      background:#fff;
+      padding:1em;
+      
+      -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing:border-box;
+  }
+  
+  .content-full {
+      height:100%;
+  }
+  
+  #done {
+      height:20%;
   }
   </style>
 
@@ -24,7 +131,7 @@
 
 
 <!-- Start of Navigation Bar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <img alt="Brand" src="img/heroes-brand.jpg" height ="50" width="100">
     <ul class="nav navbar-nav navbar-right">
@@ -41,7 +148,31 @@
 
 <body>
 
-     
+    <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-between" data-anchor-target="#dragons + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 106.64036817883%, 0px); transform: translate3d(0px, 106.64036817883%, 0px);">
+        
+        <div class="parallax-image parallax-image-100 skrollable skrollable-between" style="-webkit-transform: translate3d(0px, -5.31229454306377%, 0px); transform: translate3d(0px, -5.31229454306377%, 0px); background-image: url(img/back.png);" data-anchor-target="#dragons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+        <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+    </div>
+    
+    <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-before" data-anchor-target="#bacons + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 200%, 0px); transform: translate3d(0px, 200%, 0px);">
+        
+        <div class="parallax-image parallax-image-100 skrollable skrollable-before" style="-webkit-transform: translate3d(0px, -80%, 0px); transform: translate3d(0px, -80%, 0px); background-image: url(img/welcoming.png);" data-anchor-target="#bacons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+    </div>
+
+    
+    
+    
+    <div id="skrollr-body">
+        <div class="gap gap-100" style="background-image:url(img/back.png);"></div>
+        <div class="content content-full welcoming" id="kittens">
+            <img src="img/welcoming.png" alt="Welcoming" style="width:100%;height:100%">
+        </div>
+        <div class="gap gap-50" style="background-image:url(img/welcoming.png);"></div>
+        <div class="content" id="done">
+            Heroes website copyright
+        </div>
+    </div>
+    
 
 
     <!-- Bootstrap core JavaScript
@@ -49,6 +180,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./Classic parallax page_files/skrollr.min.js"></script>
   
 </body>
 </html>
