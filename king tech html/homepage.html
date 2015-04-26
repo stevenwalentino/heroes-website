@@ -12,10 +12,6 @@
     filter: alpha(opacity=40);
     
   }
-  welcoming{
-    background-image: url("img/HL - HLHomepage.png");
-    background-size: 100% 100%;
-  }
   * {
       padding:0;
       margin:0;
@@ -156,18 +152,27 @@
     
     <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-before" data-anchor-target="#bacons + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 200%, 0px); transform: translate3d(0px, 200%, 0px);">
         
-        <div class="parallax-image parallax-image-100 skrollable skrollable-before" style="-webkit-transform: translate3d(0px, -80%, 0px); transform: translate3d(0px, -80%, 0px); background-image: url(img/welcoming.png);" data-anchor-target="#bacons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+        <div class="parallax-image parallax-image-100 skrollable skrollable-before" style="-webkit-transform: translate3d(0px, -80%, 0px); transform: translate3d(0px, -80%, 0px); background-image: url(img/events.png);" data-anchor-target="#bacons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
     </div>
-
+    
+    <div class="parallax-image-wrapper parallax-image-wrapper-50 skrollable skrollable-before" data-anchor-target="#kittens + .gap" data-bottom-top="transform:translate3d(0px, 300%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 300%, 0px); transform: translate3d(0px, 300%, 0px);">
+        
+        <div class="parallax-image parallax-image-50 skrollable skrollable-before" style="-webkit-transform: translate3d(0px, -60%, 0px); transform: translate3d(0px, -60%, 0px); background-image: url(img/events.png);" data-anchor-target="#kittens + .gap" data-bottom-top="transform: translate3d(0px, -60%, 0px);" data-top-bottom="transform: translate3d(0px, 60%, 0px);"></div>
+    </div>
     
     
     
     <div id="skrollr-body">
+        <div class="header" id="dragons"></div>
         <div class="gap gap-100" style="background-image:url(img/back.png);"></div>
-        <div class="content content-full welcoming" id="kittens">
+        <div class="content" id="bacons">
             <img src="img/welcoming.png" alt="Welcoming" style="width:100%;height:100%">
         </div>
-        <div class="gap gap-50" style="background-image:url(img/welcoming.png);"></div>
+        <div class="gap gap-100" style="background-image:url(img/events.png);"></div>
+        <div class="content content-full" id="kittens">
+            text here
+        </div>
+        <div class="gap gap-50" style="background-image:url(images/kitteh3.jpg);"></div>
         <div class="content" id="done">
             Heroes website copyright
         </div>
@@ -181,6 +186,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./Classic parallax page_files/skrollr.min.js"></script>
+    <script type="text/javascript">
+        skrollr.init({
+             smoothScrolling: false,
+             mobileDeceleration: 0.004
+    });
+    </script>
   
 </body>
 </html>
