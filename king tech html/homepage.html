@@ -16,6 +16,15 @@
       height:0%;
       top:-50%;
   }
+  .transparent{
+      opacity: 0.4;
+      filter: alpha(opacity=40);
+  }
+  
+  .bacons{
+      background-image: url("img/events.jpg");
+<!--      background-color: #cccccc;-->
+  }
   
   * {
       padding:0;
@@ -134,24 +143,34 @@
 
 <!-- Start of Navigation Bar -->
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <img alt="Brand" src="img/heroes-brand.jpg" height ="50" width="100">
-    <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="">HOME</a></li>
-      <li><a href="">ABOUT US</a></li>
-      <li><a href="">CALENDAR</a></li>
-      <li><a href="">LOCATIONS</a></li>
-      <li><a href="">GALLERY</a></li>
-      <li><a href="">BLOG</a></li>
-      <li><a href="">CONTACT US</a></li>
-    </ul>
-  </div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img alt="Brand" src="img/heroes-brand.jpg" height ="50" width="100">
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CALENDAR</a></li>
+                <li><a href="#">LOCATIONS</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </div>
+    </div>
 </nav>
 
-<body style="height: 3769px;">
 
+
+<body>
+    
     <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-between" data-anchor-target="#dragons + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 106.64036817883%, 0px); transform: translate3d(0px, 106.64036817883%, 0px);">
-        
         <div class="parallax-image parallax-image-100 skrollable skrollable-between" style="-webkit-transform: translate3d(0px, -5.31229454306377%, 0px); transform: translate3d(0px, -5.31229454306377%, 0px); background-image: url(img/back.jpg);" data-anchor-target="#dragons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
         <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
     </div>
@@ -161,7 +180,7 @@
         <div class="parallax-image parallax-image-100 skrollable skrollable-before" style="-webkit-transform: translate3d(0px, -80%, 0px); transform: translate3d(0px, -80%, 0px); background-image: url(img/events.jpg);" data-anchor-target="#bacons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
     </div>
     
-    <div class="parallax-image-wrapper parallax-image-wrapper-50 skrollable skrollable-before" data-anchor-target="#kittens + .gap" data-bottom-top="transform:translate3d(0px, 300%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 300%, 0px); transform: translate3d(0px, 300%, 0px);">
+    <div class="parallax-image-wrapper parallax-image-wrapper-50 skrollable skrollable-before" data-anchor-target="#kittens + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 300%, 0px); transform: translate3d(0px, 300%, 0px);">
         
         <div class="parallax-image parallax-image-50 skrollable skrollable-before" style="-webkit-transform: translate3d(0px, -60%, 0px); transform: translate3d(0px, -60%, 0px); background-image: url(img/haloween.jpg);" data-anchor-target="#kittens + .gap" data-bottom-top="transform: translate3d(0px, -60%, 0px);" data-top-bottom="transform: translate3d(0px, 60%, 0px);"></div>
     </div>
@@ -171,15 +190,15 @@
     <div id="skrollr-body">
         <div class="header hide" id="dragons"></div>
         <div class="gap gap-100" style="background-image:url(img/back.jpg);"></div>
-        <div class="content" id="bacons">
-            <img src="img/welcoming.jpg" alt="Welcoming" style="width:100%;height:100%">
+        <div class="content bacons" id="bacons">
+<!--            <img src="img/welcoming.jpg" alt="Welcoming" style="width:110%;height:100%">-->
         </div>
         <div class="gap gap-100" style="background-image:url(img/events.jpg);"></div>
-        <div class="content content-full" id="kittens">
-            text here
+        <div class="content" id="kittens">
+            <img src="img/welcoming.jpg" alt="Welcoming" style="width:102.7%;height:90%;margin-left:-15px;margin-top:-15px;margin-bottom:-15px">
         </div>
         <div class="gap gap-100" style="background-image:url(img/haloween.jpg);"></div>
-        <div class="content" id="done">
+        <div class="content done" id="done">
             Heroes website copyright
         </div>
     </div>
