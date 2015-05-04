@@ -12,6 +12,13 @@
     filter: alpha(opacity=40);
   }
   
+  * {
+      padding:0;
+      margin:0;
+      <!--      font-family: 'Nunito', sans-serif;-->
+      font-family: "Avenir LT W01 35 Light";
+  }
+  
   .hide {
       height:0%;
       top:-50%;
@@ -51,11 +58,7 @@
 <!--      background-color: #cccccc;-->
   }
   
-  * {
-      padding:0;
-      margin:0;
-      font-family: 'Nunito', sans-serif;
-  }
+
   
   html, body {
       height:100%;
@@ -156,7 +159,7 @@
   }
   
   .done {
-      height:50%;
+      height:55%;
   }
   </style>
 
@@ -224,10 +227,11 @@
     </div>
     
 
-    
+    <img src="img/KT - W1 HL Text.png" alt="our picture" style="width:700px;height:14%; position: absolute; top: 500px" align="top">
     
     <div id="skrollr-body">
-        <div class="header hide" id="head"></div>
+        <div class="header hide" id="head">
+        </div>
         <div class="gap gap-100" style="background-image:url(img/HLHpage.png);"></div>
         <div class="content content-full bacons" id="about-us">
             <div class="container">
@@ -236,7 +240,7 @@
             </div>
         </div>
         <div class="gap gap-50" style="background-image:url(img/welcoming.jpg);"></div>
-        <div class="content done" id="events">
+        <div class="content done muted" id="events">
             <div class="container">
                 <div class="container">
                     <div class="col-md-4"></div>
@@ -248,8 +252,8 @@
                     <div class="row">
                         <img src="img/cg.jpg" alt="Welcoming" style="max-width:80%;height:auto;" class="center-block">
                     </div>
-                    <div class="row container">
-                        <p>CG HERHEHREHREHREHRHRHERHhererehrehrehrheherere</p>
+                    <div class="row">
+                        <div style="position:relative;left:10%">Care Group</div>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -257,7 +261,7 @@
                         <img src="img/service.jpg" alt="Welcoming" style="max-width:80%;height:auto;" class="center-block">
                             </div>
                     <div class="row">
-                        Service TESTETSTESTESTESTETS
+                        <div style="position:relative;left:10%">Sunday Service</div>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -265,9 +269,10 @@
                         <img src="img/pm.jpg" alt="Welcoming" style="max-width:80%;height:auto;" class="center-block">
                             </div>
                     <div class="row">
-                        PM MMMMMMMMMMMMMMMMMM
+                        <div style="position:relative;left:10%">Prayer Meeting</div>
                     </div>
                 </div>
+                <div style="margin:20px"> Footer for credit</div>
             </div>
         </div>
     </div>
