@@ -21,6 +21,14 @@
       opacity: 0.4;
       filter: alpha(opacity=40);
   }
+
+  .navbar-pad{
+    padding-right: 20px;
+  }
+
+  #brandlogo{
+    margin-top:5px;
+  }
   
   .text-center{
       text-align: center;
@@ -146,7 +154,7 @@
   }
   
   .done {
-      height:70%;
+      height:40%;
   }
   </style>
 
@@ -158,40 +166,43 @@
 
 
 <!-- Start of Navigation Bar -->
-<nav class="navbar navbar-default navbar-fixed-top" style="padding: 0px 45px">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <img alt="Brand" src="img/heroes-brand.jpg" height ="50" width="90">
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">HOME</a></li>
-                <li><a href="#">CALENDAR</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT US</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<div class = "container-fluid">
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="padding: 0px 15px">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+
+              <img alt="Brand" src="img/navbarlogo2.png" height ="40" width="40" id="brandlogo">
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right navbar-pad">
+                  <li class="active"><a href="#">HOME</a></li>
+                  <li><a href="#">CALENDAR</a></li>
+                  <li><a href="#">GALLERY</a></li>
+                  <li><a href="#">BLOG</a></li>
+                  <li><a href="#">CONTACT US</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</div>
 
 
 
 <body>
     
     <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-between" data-anchor-target="#head + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 106.64036817883%, 0px); transform: translate3d(0px, 106.64036817883%, 0px);">
-        <div class="parallax-image parallax-image-100 skrollable skrollable-between" style="-webkit-transform: translate3d(0px, -5.31229454306377%, 0px); transform: translate3d(0px, -5.31229454306377%, 0px); background-image: url(img/back.jpg);" data-anchor-target="#head + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+        <div class="parallax-image parallax-image-100 skrollable skrollable-between" style="-webkit-transform: translate3d(0px, -5.31229454306377%, 0px); transform: translate3d(0px, -5.31229454306377%, 0px); background-image: url(img/HLHpage.png);" data-anchor-target="#head + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
         <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
     </div>
     
     <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-before" data-anchor-target="#about-us + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 200%, 0px); transform: translate3d(0px, 200%, 0px);">
         
-        <div class="parallax-image parallax-image-100 skrollable skrollable-before" style="-webkit-transform: translate3d(0px, -80%, 0px); transform: translate3d(0px, -80%, 0px); background-image: url(img/haloween.jpg);" data-anchor-target="#about-us + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+        <div class="parallax-image parallax-image-100 skrollable skrollable-before" style="-webkit-transform: translate3d(0px, -80%, 0px); transform: translate3d(0px, -80%, 0px); background-image: url(img/ueventcover.jpg);" data-anchor-target="#about-us + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
     </div>
     
 
@@ -199,7 +210,7 @@
     
     <div id="skrollr-body">
         <div class="header hide" id="head"></div>
-        <div class="gap gap-100" style="background-image:url(img/back.jpg);"></div>
+        <div class="gap gap-100" style="background-image:url(img/HLHpage.png);"></div>
         <div class="content content-full bacons" id="about-us">
             about us here
             <img src="img/upcomingcg.png" alt="our picture" style="width:300px;height:300px;">
