@@ -123,29 +123,24 @@
       display:none !important;
   }
   
-  .js-video {
-      height: 0;
-      padding-top: 25px;
-      padding-bottom: 67.5%;
-      margin-bottom: 10px;
+  .video-container {
       position: relative;
+      padding-bottom: 100px;
+      padding-top: 35px;
+      height: 90%;
       overflow: hidden;
+      max-width:560px;
+      max-height:315px;
   }
   
-  .js-video.widescreen {
-      padding-bottom: 56.34%;
-  }
-  
-  .js-video.vimeo {
-      padding-top: 0;
-  }
-  
-  .js-video embed, .js-video iframe, .js-video object, .js-video video {
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+  .video-container iframe {
       position: absolute;
+      top:5%;
+      left:5%;
+      width: 90%;
+      height: 90%;
+      max-width:560px;
+      max-height:315px;
   }
   
   #skrollr-body {
@@ -268,21 +263,20 @@
         </div>
         
         <div class="content content-full bacons" id="about-us" style="background-image:url('img/KT - W2 Background Red Logo.png');background-repeat: no-repeat;">
-            <center><img src="img/KT - W2 About Us Text.png" alt="upcoming events" style="max-width:30%;min-width:250px;height:auto;" class="center-block">
-            <center>
-                <iframe width=560 height=315 class="embed-responsive-item" src="https://www.youtube.com/embed/1guf2LW0kRU"></iframe>
-            </center>
-<!--            <div class="js-video [vimeo, widescreen]">-->
-<!--                <iframe width="560" height="315" src="https://www.youtube.com/embed/1guf2LW0kRU" frameborder="0" allowfullscreen></iframe>-->
-<!--            </div>-->
-            <br>
-<!--            <video width="500" height="300" controls>-->
-<!--                <source src="vid/KT - W2 About Us Video.mp4" type="video/mp4">-->
-<!--                <source src="vid/KT - W2 About Us Video.webm" type="video/webm">-->
-<!--                <source src="vid/KT - W2 About Us Video.ogg" type="video/ogg">-->
-<!--                Your browser does not support the video tag.-->
-<!--            </video></center>-->
-            test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test
+            <div class="row">
+                <center><img src="img/KT - W2 About Us Text.png" alt="upcoming events" style="max-width:30%;min-width:250px;height:auto;" class="center-block"></center>
+            </div>
+            <div class="row">
+                <center>
+                    <div class="video-container">
+                        <iframe width=560 height=315 class="embed-responsive-item" src="https://www.youtube.com/embed/1guf2LW0kRU">
+                        </iframe>
+                    </div>
+                </center>
+            </div>
+            <div class="container">
+                test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test
+            </div>
         </div>
         
         <div class="gap gap-50" style="background-image:url(img/welcoming.jpg);"></div>
