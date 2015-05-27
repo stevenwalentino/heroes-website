@@ -217,6 +217,55 @@
   .done {
       height:70px;
   }
+  
+  /*for mobile*/
+  @media screen and (max-width: 600px) {
+      .video-container {
+          position: relative;
+          padding-bottom: 20px;
+          padding-top: 35px;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          max-width:900px;
+          max-height:53vh;
+      }
+      
+      .video-container iframe {
+          position: absolute;
+          top:0%;
+          left:5%;
+          width: 90%;
+          height: 90%;
+          max-width:900px;
+          max-height:53vh;
+      }
+  }
+  
+  /*for ipad*/
+  @media screen and (min-width: 600px) and (max-width: 840px) {
+      .video-container {
+          position: relative;
+          padding-bottom: 20px;
+          padding-top: 35px;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          max-width:900px;
+          max-height:70vh;
+      }
+      
+      .video-container iframe {
+          position: absolute;
+          top:0%;
+          left:5%;
+          width: 90%;
+          height: 90%;
+          max-width:900px;
+          max-height:70vh;
+      }
+  }
+  
   </style>
 
   <title>Heroes &amp; Legends</title>
