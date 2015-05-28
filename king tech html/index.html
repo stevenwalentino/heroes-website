@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=no>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -136,9 +136,9 @@
   }
   
   .video-container iframe {
-      position: absolute;
+      position: relative;
       top:0%;
-      left:5%;
+      left:0%;
       width: 90%;
       height: 94%;
       max-width:760px;
@@ -170,8 +170,8 @@
   
   .header, .content {
       background:#fff;
-      padding:1em;
-      
+<!--      padding:1em;-->
+
       -webkit-box-sizing:border-box;
       -moz-box-sizing:border-box;
       box-sizing:border-box;
@@ -241,7 +241,7 @@
           height: 100%;
           overflow: hidden;
           max-width:900px;
-          max-height:53vh;
+          max-height:43vh;
       }
       
       .video-container iframe {
@@ -251,11 +251,11 @@
           width: 90%;
           height: 90%;
           max-width:900px;
-          max-height:53vh;
+          max-height:43vh;
       }
       
       .upcomingevents {
-          height:150%;
+          height:100%;
       }
       
       .about-us-text{
@@ -365,10 +365,12 @@
         </div>
         
         <div class="content bacons" id="about-us" style="background-image:url('img/KT - W2 Background Red Logo.png');background-repeat: no-repeat;">
-            <div class="row">
-                <center><img src="img/KT - W2 About Us Text.png" alt="upcoming events" style="max-width:30%;min-width:250px;height:auto;" class="center-block"></center>
+            <div class="row" style="width:103vw">
+                <center>
+                    <img src="img/KT - W2 About Us Text.png" alt="upcoming events" style="max-width:30%;min-width:250px;height:auto;" class="center-block">
+                </center>
             </div>
-            <div class="row">
+            <div>
                 <center>
                     <div class="video-container">
                         <iframe width=560 height=315 class="embed-responsive-item" src="https://www.youtube.com/embed/1guf2LW0kRU">
@@ -377,6 +379,7 @@
                 </center>
             </div>
             <div class="container about-us-text">
+                <h2>Who </h2>
                 Heroes &amp; Legends is a community of believers who love learning and spreading the Word of Truth. Primarily consisting of UC Berkeley students and alumni, we enjoy exploring local delicacies and doing typical students as a way to foster bromanceship and sisterhood. The guys call themselves Heroes and the girls call themselves Legends.
                 <br><br>
                 Check out our upcoming events below and join the fun!
@@ -393,7 +396,7 @@
                     <div class="row">
                         <img src="img/cg.jpg" alt="cg" style="max-width:80%;height:auto;" class="center-block">
                     </div>
-                    <div class="row">
+                    <div class="row" style="width:88vw">
                         <div style="position:relative;left:10%; font-size:160%">Care Group</div><br>
                     </div>
                 </div>
@@ -401,7 +404,7 @@
                     <div class="row">
                         <img src="img/service.jpg" alt="service" style="max-width:80%;height:auto;" class="center-block">
                             </div>
-                    <div class="row">
+                    <div class="row" style="width:88vw">
                         <div style="position:relative;left:10%;font-size:160%">Sunday Service</div><br>
                     </div>
                 </div>
@@ -409,16 +412,17 @@
                     <div class="row">
                         <img src="img/pm.jpg" alt="pm" style="max-width:80%;height:auto;" class="center-block">
                             </div>
-                    <div class="row">
+                    <div class="row" style="width:88vw">
                         <div style="position:relative;left:10%;font-size:160%">Prayer Meeting</div>
                     </div>
                 </div>
             </div>
             <br>
+            
             <footer class="content done navbar-inverse muted col-sm-12" id="events" style="background-color:gray">
                 <center>
-                    <img src="img/facebook.png" alt="facebook" style="min-width:55px;max-width:4%;height:auto;top:-6;position:relative">
-                    <img src="img/instagram.png" alt="instagram" style="min-width:55px;max-width:4%;height:auto;top:-6;position:relative">
+                    <img src="img/facebook.png" alt="facebook" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
+                    <img src="img/instagram.png" alt="instagram" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
                     </center>
             </footer>
 
