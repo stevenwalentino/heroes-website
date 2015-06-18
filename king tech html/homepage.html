@@ -1,0 +1,228 @@
+<html lang="en" class="skrollr skrollr-desktop">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <style type="text/css">
+  .navbar{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    
+  }
+  .hide {
+      height:0%;
+      top:-50%;
+  }
+  .transparent{
+      opacity: 0.4;
+      filter: alpha(opacity=40);
+  }
+  
+  .bacons{
+      background-image: url("img/events.jpg");
+<!--      background-color: #cccccc;-->
+  }
+  
+  * {
+      padding:0;
+      margin:0;
+  }
+  
+  html, body {
+      height:100%;
+  }
+  
+  .skrollr-desktop body {
+      height:100% !important;
+  }
+  
+  body {
+      font-family:sans-serif;
+  }
+  
+  p {
+      margin:1em 0;
+  }
+  
+  .parallax-image-wrapper {
+      position:fixed;
+      left:0;
+      width:100%;
+      overflow:hidden;
+  }
+  
+  .parallax-image-wrapper-50 {
+      height:50%;
+      top:-50%;
+  }
+  
+  .parallax-image-wrapper-100 {
+      height:100%;
+      top:-100%;
+  }
+  
+  .parallax-image {
+      display:none;
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:cover;
+  }
+  
+  .parallax-image-50 {
+      height:200%;
+      top:-50%;
+  }
+  
+  .parallax-image-100 {
+      height:100%;
+      top:0;
+  }
+  
+  .parallax-image.skrollable-between {
+      display:block;
+  }
+  
+  .no-skrollr .parallax-image-wrapper {
+      display:none !important;
+  }
+  
+  #skrollr-body {
+      height:100%;
+      overflow:visible;
+      position:relative;
+  }
+  
+  .gap {
+      background:transparent center no-repeat;
+      background-size:cover;
+  }
+  
+  .skrollr .gap {
+      background:transparent !important;
+  }
+  
+  .gap-50 {
+      height:50%;
+  }
+  
+  .gap-100 {
+      height:100%;
+  }
+  
+  .header, .content {
+      background:#fff;
+      padding:1em;
+      
+      -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing:border-box;
+  }
+  
+  .content-full {
+      height:100%;
+  }
+  
+  #done {
+      height:20%;
+  }
+
+  .padfromright
+  {
+    padding-right: 20px;
+
+
+  }
+  </style>
+
+  <title>KING TECH</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+  <style type="text/css"></style>
+</head>
+
+
+<!-- Start of Navigation Bar -->
+<div class = "container">
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <img alt="Brand" src="img/heroes-brand.jpg" height ="50" width="100">
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right padfromright">
+                  <li class="active"><a href="#">HOME</a></li>
+                  <li><a href="#">CALENDAR</a></li>
+                  <li><a href="#">BLOG</a></li>
+                  <li><a href="#">GALLERY</a></li>
+                  <li><a href="#">CONTACT US</a></li>
+          </div>
+      </div>
+  </nav>
+</div>
+
+
+
+<body>
+    
+    <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-between" data-anchor-target="#dragons + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 106.64036817883%, 0px); transform: translate3d(0px, 106.64036817883%, 0px);">
+        <div class="parallax-image parallax-image-100 skrollable skrollable-between" style="-webkit-transform: translate3d(0px, -5.31229454306377%, 0px); transform: translate3d(0px, -5.31229454306377%, 0px); background-image: url(img/back.jpg);" data-anchor-target="#dragons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+        <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+    </div>
+  
+    <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-before" data-anchor-target="#bacons + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 200%, 0px); transform: translate3d(0px, 200%, 0px);">
+        
+        <div class="parallax-image parallax-image-100 skrollable skrollable-before" style="-webkit-transform: translate3d(0px, -80%, 0px); transform: translate3d(0px, -80%, 0px); background-image: url(img/events.jpg);" data-anchor-target="#bacons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+    </div>
+    
+    <div class="parallax-image-wrapper parallax-image-wrapper-50 skrollable skrollable-before" data-anchor-target="#kittens + .gap" data-bottom-top="transform:translate3d(0px, 300%, 0px)" data-top-bottom="transform:translate3d(0px, 10%, 0px)" style="-webkit-transform: translate3d(0px, 300%, 0px); transform: translate3d(0px, 300%, 0px);">
+        
+        <div class="parallax-image parallax-image-50 skrollable skrollable-before" style="-webkit-transform: translate3d(0px, -60%, 0px); transform: translate3d(0px, -60%, 0px); background-image: url(img/haloween.jpg);" data-anchor-target="#kittens + .gap" data-bottom-top="transform: translate3d(0px, -90%, 0px);" data-top-bottom="transform: translate3d(0px, 60%, 0px);"></div>
+    </div>
+    
+    
+    
+    <div id="skrollr-body">
+        <div class="header hide" id="dragons"></div>
+        <div class="gap gap-100" style="background-image:url(img/back.jpg);"></div>
+        <div class="content bacons" id="bacons">
+<!--            <img src="img/welcoming.jpg" alt="Welcoming" style="width:110%;height:100%">-->
+        </div>
+        <div class="gap gap-100" style="background-image:url(img/events.jpg);"></div>
+        <div class="content" id="kittens">
+            <img src="img/welcoming.jpg" alt="Welcoming" style="width:102.7%;height:90%;margin-left:-15px;margin-top:-15px;margin-bottom:-15px">
+        </div>
+        <div class="gap gap-100" style="background-image:url(img/haloween.jpg);"></div>
+        <div class="content done" id="done">
+            Heroes website copyright 2015, All rights reserved.
+        </div>
+    </div>
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript">
+        skrollr.init({
+             smoothScrolling: false,
+             mobileDeceleration: 0.004
+    });
+    </script>
+  
+</body>
+</html>
