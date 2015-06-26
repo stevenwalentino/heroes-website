@@ -1,0 +1,244 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <style type="text/css">
+  .navbar{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+  }
+
+  .navbar-brand{
+      position: absolute;
+      padding: 2px 2% !important;
+  }
+  
+  .navbar-default{
+      background-color: black !important;
+      border-color: black !important;
+      opacity: 0.6 !important;
+  }
+  
+  .navbar-default .navbar-nav > .active > a {
+      background-color: black !important;
+      color: yellow !important;
+  }
+  
+  .navbar-collapse{
+      border-top: none !important;
+  }
+
+  .hllogo{
+      max-width:70%;
+      height:auto;
+      position:relative;
+      top: 70vh;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:50px;
+  }
+
+  
+
+ 
+
+  .fc-calendar .fc-row > div.fc-today.fc-future >  span.fc-date{
+    color:red;
+    background-color:yellow;
+
+  }
+
+  .fc-calendar .fc-row > div.fc-today.fc-future.fc-content >  span.fc-date{
+    color:red;
+    background-color:transparent;
+  }
+
+  .fc-calendar .fc-row > div.fc-future.fc-content >  span.fc-date{
+    color:red;
+    background-color:transparent;
+  }
+
+  .fc-calendar .fc-row > div.fc-content >  span.fc-date{
+    left:50px;
+    top:50px;
+  }
+
+
+
+
+
+  h2#custom-month.custom-month{
+    color:black;
+    font-weight: bold ;
+  }
+
+  h3#custom-year.custom-year{
+    position:relative;
+    top:-10px;
+    color:black;
+  }
+
+  body{
+    background:white!important;
+  }
+
+  .img-holder {
+    width:100%;
+    height:200px;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .img-holder img {
+    position:absolute;
+    top:-200px;
+    height:750px;
+    width:1200px;
+  }
+
+  .maincontent{
+    background-image: url('img/KT - W2 Background Red Logo.png');
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+
+  }
+
+
+
+  
+  </style>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="Calendario-master/css/demo.css" rel="stylesheet">
+  <link href="Calendario-master/css/calendar.css" rel="stylesheet">
+  <link href="Calendario-master/css/custom_3.css" rel="stylesheet"> 
+  <script src="Calendario-master/js/modernizr.custom.63321.js"></script>
+
+</head>
+
+
+
+<body>
+    <div class="img-holder">
+      <img src= "img/HC-calendar.jpeg">
+    </div>
+    <div class = "container-fluid">
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand">
+                      <img alt="Brand" src="img/navbarlogo2.png" height ="40" width="40" id="brandlogo">
+                  </a>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav navbar-right navbar-pad">
+                      <li><a href="homepage.html">HOME</a></li>
+                      <li class="active">EVENTS</li>
+                      <li><a href="gallery.html">GALLERY</a></li>
+                      <li><a href="blog.html">BLOG</a></li>
+                      <li><a href="contactUs.html">CONTACT US</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </div>
+
+
+    <div class = "maincontent">
+      <center><img src="Calendario-master/images/CalendarText.jpg" alt="calendartext" style="position:relative;top:30px;max-width:40%;min-width:300px;height:auto;" class="center-block"></center>
+
+     
+    	<section class="main">
+        <div class="custom-calendar-wrap">
+            <div id="custom-inner" class="custom-inner">
+                <div class="custom-header clearfix">
+                    <nav>
+                        <span id="custom-prev" class="custom-prev"></span>
+                        <span id="custom-next" class="custom-next"></span>
+                    </nav>
+                    <h2 id="custom-month" class="custom-month"></h2>
+                    <h3 id="custom-year" class="custom-year"></h3>
+                </div>
+                <div id="calendar"class="fc-calendar-container"></div>
+            </div>
+        </div>
+      </section>
+    </div>
+      
+  </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="Calendario-master/js/data.js"></script>
+<script type="text/javascript" src="Calendario-master/js/jquery.calendario.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript"> 
+          $(function() {
+              var pop_title = '', pop_content = '';
+              $(document).popover({
+                  html: true,
+                  trigger: 'click',
+                  selector: 'div.fc-content',
+                  placement: 'auto',
+                  content: function() {
+                              return pop_content;
+                           },
+                  title: function() {
+                              return pop_title;
+                         },
+                  container: 'body'
+              });
+              var transEndEventNames = {
+                      'WebkitTransition' : 'webkitTransitionEnd',
+                      'MozTransition' : 'transitionend',
+                      'OTransition' : 'oTransitionEnd',
+                      'msTransition' : 'MSTransitionEnd',
+                      'transition' : 'transitionend'
+                  },
+                  transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+                  $wrapper = $( '#custom-inner' ),
+                  $calendar = $( '#calendar' ),
+                  cal = $calendar.calendario({
+                      onDayMouseenter : function( $el, data, dateProperties ) {
+                          if( data.content.length > 0 ) {
+                              pop_title = dateProperties.monthname + ' ' + dateProperties.day + ', ' + dateProperties.year;
+                              pop_content = data.content.join('');
+                              cal.feed(logFeed);
+                          }
+                      },
+                      caldata : codropsEvents,
+                      events: 'mouseenter',
+                      displayWeekAbbr : true,
+                      fillEmpty: false
+                  }),
+                  $month = $( '#custom-month' ).html( cal.getMonthName() ),
+                  $year = $( '#custom-year' ).html( cal.getYear() );
+
+              $( '#custom-next' ).on( 'click', function() {
+                  cal.gotoNextMonth( updateMonthYear );
+              } );
+              $( '#custom-prev' ).on( 'click', function() {
+                  cal.gotoPreviousMonth( updateMonthYear );
+              } );
+
+              function updateMonthYear() {                
+                  $month.html( cal.getMonthName() );
+                  $year.html( cal.getYear() );
+              }
+
+              function logFeed( data ) {              
+                  console.log(data);
+              }
+
+          });
+</script>
+</body>
+</html>
+
