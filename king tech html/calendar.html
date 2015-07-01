@@ -187,10 +187,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script type="text/javascript"> 
           $(function() {
+            
+
+            
+            
               var pop_title = '', pop_content = '';
               $(document).popover({
                   html: true,
-                  trigger: 'click',
+                  trigger: 'click hover',
                   selector: 'div.fc-content',
                   placement: 'auto',
                   content: function() {
@@ -199,8 +203,29 @@
                   title: function() {
                               return pop_title;
                          },
-                  container: 'body'
-              });
+                  container: 'body',
+                  delay: {show: 50, hide: 1000}
+                  
+              })
+            .on("mouseenter", function () {
+                console.log('mouseenter');
+                var _this = this;
+                $(this).popover("show");
+                $(this).siblings(".popover").on("mouseleave", function () {
+                                                $(_this).popover('hide');
+                                                });
+                }).on("mouseleave", function () {
+                      console.log('mouseleave');
+                      var _this = this;
+                      setTimeout(function () {
+                                 if (!$(".popover:hover").length) {
+                                 $(_this).popover("hide")
+                                 }
+                                 }, 100);
+                      });
+            
+            
+            
               var transEndEventNames = {
                       'WebkitTransition' : 'webkitTransitionEnd',
                       'MozTransition' : 'transitionend',
@@ -241,7 +266,10 @@
 
               function logFeed( data ) {              
                   console.log(data);
+            
               }
+            
+            
 
           });
 </script>

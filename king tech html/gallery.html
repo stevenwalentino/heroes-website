@@ -381,7 +381,7 @@
         
         <div id="about-us" style="background-image:url('Gallery-master/img/KT - W2 Background Red Logo.png');background-repeat: no-repeat;">
             <div class="container">
-                <center><img src="Gallery-master/img/KT - Gallery Text.jpg" alt="Gallery" style="max-width:35%;min-width:240px;height:auto;" class="center-block"></center><br>
+                <center><br><img src="Gallery-master/img/KT - Gallery Text.jpg" alt="Gallery" style="max-width:35%;min-width:240px;height:auto;" class="center-block"></center><br>
                 
                 
                 
@@ -446,7 +446,7 @@
                 </div>
                 <script type="text/javascript">
                     var changemode = false;
-                    var galleryheight = 0;
+                    var galleryheight = $(window).height();
                     if(screen.width < 990)
                     {
                         // mobile
@@ -457,13 +457,13 @@
                     {
                         // for ipad
                         changemode=true;
-                        galleryheight = window.screen.availHeight*80/100;
+                        galleryheight = $(this).width()*3/5;
                     }
                     else
                     {
                         // for desktop
                         changemode=true;
-                        galleryheight = window.screen.availHeight*110/100;
+                        galleryheight = $(window).height()*82/100;
                     }
                     $( function() {
                       $( '#gallery' ).jGallery( {
