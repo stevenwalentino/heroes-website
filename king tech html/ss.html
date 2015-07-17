@@ -83,9 +83,24 @@
     <br><br><div class="container">
         <p>Did you know that Heroes and Legends is actually a part of a bigger community called IFGF Pinole? Aside from the small events that we have each week, this Sunday Service is actually the highlight when we come together in a larger group to worship and praise the Lord. Curious? Check out the information below on the service time, venue and transport inquiries.<br><br>Time : 2 15 PM - 4 PM<br>Venue: 2885 Pinole Valley Road. Pinole, CA 94564 [Link to MAP]<br>Need transport to get there? Contact Jusuf at (832) 538 - 9055<br><br>See you this Sunday!</p>
     </div> 
+    <div class="container" id="googleMap" style="width:400px;height:350px;margin-bottom:75px;border-style:solid;border-width:thin;"></div>
+
 
 </body>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript"> 
+  function initialize() {
+    var mapProp = {
+    center:new google.maps.LatLng(37.993051, -122.284817),
+    zoom: 18,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
 </html>

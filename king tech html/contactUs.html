@@ -250,10 +250,22 @@
       margin-top:50px;
   }
 
+  .img-holder {
+    width:100%;
+    height:300px;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .img-holder img {
+    position:absolute;
+    top:-350px;
+    height:750px;
+    width:1200px;
+  }
   
   </style>
 
-  <title>Heroes &amp; Legends</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/home.css" rel="stylesheet">
   <style type="text/css"></style>
@@ -275,7 +287,7 @@
           <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right navbar-pad">
                   <li><a href="homepage.html">HOME</a></li>
-                  <li><a href="calendar.html">EVENTS</a></li>
+                  <li><a href="calendar.html">CALENDAR</a></li>
                   <li><a href="gallery.html">GALLERY</a></li>
                   <li><a href="blog.html">BLOG</a></li>
                   <li class="active"><a href="#">CONTACT US</a></li>
@@ -302,9 +314,10 @@
         
         <div class="content bacons" id="about-us" style="background-image:url('img/KT - W2 Background Red Logo.png');background-repeat: no-repeat;">
             <div class="row" style="width:103vw">
-              <center>
-                    <img src="img/contactus.png" alt="upcoming events" style="max-width:100%;min-width:250px;height:250px;" class="center-block">
-                </center> 
+                <div class="img-holder">
+                  <img src= "img/High Def Photos/contact us cover.jpeg" style="width:100%">
+                </div>
+                <!--   <img src="img/High Def Photos/contact us cover.jpeg" alt="upcoming events" style="max-width:100%;min-width:250px;height:250px;" class="center-block"> -->
                 
                 <center>
                     <img src="img/KT - W2 About Us Text.png" alt="upcoming events" style="max-width:30%;min-width:250px;height:auto;" class="center-block">
@@ -343,12 +356,13 @@
         
            
             
-            <footer class="content done navbar-inverse muted col-sm-12" id="events" style="background-color:gray">
-                <center>
-                    <img src="img/facebook.png" alt="facebook" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
-                    <img src="img/instagram.png" alt="instagram" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
-                    </center>
-            </footer>
+        <footer class="content done navbar-inverse muted col-sm-12" id="events" style="background-color:gray">
+            <center>
+              <img src="img/socmed/facebook.png" alt="facebook" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
+              <img src="img/socmed/instagram.png" alt="instagram" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
+              <img src="img/socmed/youtube.png" alt="youtube" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
+            </center>
+        </footer>
 
         </div>
         

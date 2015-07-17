@@ -230,6 +230,20 @@
   .done {
       height:70px;
   }
+
+  .img-holder {
+    width:100%;
+    height:300px;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .img-holder img {
+    position:absolute;
+    top:-350px;
+    height:750px;
+    width:1200px;
+  }
   
   /*for mobile*/
   @media screen and (max-width: 600px) {
@@ -323,13 +337,25 @@
   #photo-viewer-cont{
       width: 600px;
       float: right;
+  }
+
+  .maincontent{
+    background-image: url('img/KT - W2 Background Red Logo.png');
+    background-size: 1500px 800px;
+    background-repeat:no-repeat;
+  }
+
+  div.maincontent{
+    height: 100%;
+    width: 100%;
+
+
+  }
   
   </style>
 
   <title>Heroes &amp; Legends - Blog</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/home.css" rel="stylesheet">
-  <style type="text/css"></style>
 </head>
 
 
@@ -347,8 +373,8 @@
               </a>
           <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right navbar-pad">
-                  <li><a href="./index.html">HOME</a></li>
-                  <li><a href="./calendar.html">EVENTS</a></li>
+                  <li><a href="./homepage.html">HOME</a></li>
+                  <li><a href="./calendar.html">CALENDAR</a></li>
                   <li><a href="./gallery.html">GALLERY</a></li>
                   <li class="active"><a href="#">BLOG</a></li>
                   <li><a href="./contactus.html">CONTACT US</a></li>
@@ -365,26 +391,28 @@
 
 
 
+
+
 <body>
-    <br><br>
-    <h2>This Page is Not Available</h2>
-<!--    <iframe scrolling="yes" marginheight="0" frameborder="0" width="551" style="height:581.97604790419px;" src="https://fbgalleria.com/gallery.php?id=nike&rows=4&margin=10&cols=3&width=170&font_size=11&title_color=000000&hide_next_back=0&share_buttons=1&shape=rectangle&frame=1"></iframe>-->
+    <div class="img-holder">
+      <img src= "img/High Def Photos/pm cover.jpeg" style="width:100%">
+    </div>
 
-    
+    <div class = "maincontent">
+      <center>
+        <h1> COMING SOON </h1>
+      <center>
+    </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/skrollr.min.js"></script>
-    <script type="text/javascript">
-        skrollr.init({
-             smoothScrolling: false,
-             mobileDeceleration: 0.004
-    });
-    </script>
   
 </body>
+<footer class="content done navbar-inverse muted col-sm-12" id="events" style="background-color:gray">
+    <center>
+      <img src="img/socmed/facebook.png" alt="facebook" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
+      <img src="img/socmed/instagram.png" alt="instagram" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
+      <img src="img/socmed/youtube.png" alt="youtube" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
+    </center>
+</footer>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 </html>
