@@ -58,7 +58,7 @@
 
   .fc-calendar .fc-row > div.fc-today.fc-future.fc-content >  span.fc-date{
     color:red;
-    background-color:transparent;
+    background-color:yellow;
   }
 
   .fc-calendar .fc-row > div.fc-future.fc-content >  span.fc-date{
@@ -67,8 +67,8 @@
   }
 
   .fc-calendar .fc-row > div.fc-content >  span.fc-date{
-    left:50px;
-    top:50px;
+    left:50%;
+    top:50%;
   }
 
 
@@ -105,7 +105,6 @@
   }
 
   .maincontent{
-    background-image: url('img/KT - W2 Background Red Logo.png');
     background-size: 100% 100%;
     background-repeat:no-repeat;
 
@@ -137,12 +136,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="./homepage.html" class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img alt="Brand" src="img/navbarlogo2.png" height ="40" width="40" id="brandlogo">
                     </a>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right navbar-pad">
-                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li class="active"><a href="#">CALENDAR</a></li>
                     <li><a href="gallery.html">GALLERY</a></li>
                     <li><a href="blog.html">BLOG</a></li>
@@ -205,17 +204,20 @@
               var pop_title = '', pop_content = '';
               $(document).popover({
                   html: true,
-                  trigger: 'click hover',
+                  trigger: 'click',
                   selector: 'div.fc-content',
                   placement: 'auto',
                   content: function() {
+                              pop_content=pop_content.replace("100%", "60px");
+                              pop_content=pop_content.replace("100%", "60px"); //replace 100%
+                              console.log(pop_content);
                               return pop_content;
                            },
                   title: function() {
                               return pop_title;
                          },
                   container: 'body',
-                  delay: {show: 50, hide: 1000}
+                  delay: {show: 0, hide: 0}
                   
               })
             .on("mouseenter", function () {
@@ -252,7 +254,10 @@
                           if( data.content.length > 0 ) {
                               pop_title = dateProperties.monthname + ' ' + dateProperties.day + ', ' + dateProperties.year;
                               pop_content = data.content.join('');
-                              cal.feed(logFeed);
+                              console.log(typeof data.content);
+                              console.log(data.content)
+                              
+                           
                           }
                       },
                       caldata : codropsEvents,
