@@ -1,0 +1,42 @@
+  .navbar{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+  }
+  .navbar-brand{
+      position: absolute;
+      padding: 2px 2% !important;
+  }
+  .navbar-default{
+      background-color: black !important;
+      border-color: black !important;
+      opacity: 0.6 !important;
+  }
+  .navbar-default .navbar-nav > .active > a {
+      background-color: black !important;
+      color: yellow !important;
+  }
+  .navbar-collapse{
+      border-top: none !important;
+  }
+  .navbar-pad{
+    padding-right: 20px;
+  }
+
+  #brandlogo{
+    margin-top:5px;
+  }
+  .hllogo{
+      max-width:70%;
+      height:auto;
+      position:relative;
+      top: 70vh;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:50px;
+  }
+  .img-holder {
+    width:100%;
+    height:300px;
+    position:relative;
+    overflow:hidden;
+  }
