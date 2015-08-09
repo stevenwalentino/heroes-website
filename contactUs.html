@@ -77,22 +77,25 @@
                     
 
                     <tr>
-                            <td><b> Name:&#xa0;</b>
-                            </td><br><td> <input name="Name" style="width: 100%; padding: 0 8px;" type="text" placeholder="Name">
+                            <td><label> Name:</label>
+                            </td><br><td> <input type="text" name="name" style="width: 100%; padding: 0 8px;"  placeholder="Name">
                         </td></tr>
 
                     <br><br>
                     <tr>
-                            <td><b> Email:&#xa0;</b>
-                            </td><br><td> <input name="Email" style="width: 100%; padding: 0 8px;" type="text" placeholder="Email">
+                            <td><label> Email:</label>
+                            </td><br><td> <input type="email" name="_replyto" style="width: 100%; padding: 0 8px;" type="text" placeholder="Email">
                         </td></tr>
 
                     <br><br><tr>
-                            <td> <b>Message:&#xa0;</b>
-                            </td><br><td> <textarea name="Message" style="width: 100%; height: 100px; border: 1px solid #CCC; border-radius: 5px; padding: 5px 8px; resize: none;" placeholder="Message"></textarea>
+                            <td> <label>Message:</label>
+                            </td><br><td> <textarea name="message" style="width: 100%; height: 100px; border: 1px solid #CCC; border-radius: 5px; padding: 5px 8px; resize: none;" placeholder="Message"></textarea>
                         </td></tr>
                     <BR><br>
-                    <center><button type="submit" value="Submit" class="btn btn-primary"> </center>
+                      <td>
+                        <input type="hidden"  name="_subject" value="Request about IFGF Pinole">
+                      </td>
+                    <center><button type="submit" class="btn btn-primary">Submit</button></center>
                   </FORM>
                   <br><br>
                 </div>
