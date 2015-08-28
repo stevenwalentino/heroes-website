@@ -6,8 +6,8 @@
   * {
       padding:0;
       margin:0;
-      <!--      font-family: 'Nunito', sans-serif;-->
-<!--      font-family: "Avenir LT W01 35 Light";-->
+      /*font-family: 'Nunito', sans-serif;
+      font-family: "Avenir LT W01 35 Light";*/
       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   }
   
@@ -47,7 +47,7 @@
   
   .bacons{
       background-image: url("img/events.jpg");
-<!--      background-color: #cccccc;-->
+      /*background-color: #cccccc;*/
   }
   
 
@@ -161,7 +161,7 @@
   
   .header, .content {
       background:#fff;
-<!--      padding:1em;-->
+      /*padding:1em;*/
 
       -webkit-box-sizing:border-box;
       -moz-box-sizing:border-box;
@@ -193,12 +193,12 @@
   }
   
   .content-aboutus{
-      if (screen.width<=800) {
+      /*if (screen.width<=800) {
           height:150%;
       }
       else  {
           height:100%;
-      }
+      }*/
   }
   
   .hllogo{
@@ -276,6 +276,9 @@
           height: 90%;
           max-width:900px;
           max-height:70vh;
+      }
+      
+      .upcomingevents {
       }
       
   }
